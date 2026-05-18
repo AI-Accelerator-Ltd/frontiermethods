@@ -65,46 +65,404 @@ export default function Page() {
           />
 
           <div className="card">
-            <div className="bg-gable text-white rounded-lg p-6 mb-6 max-w-md mx-auto text-center">
-              <div className="text-[10px] uppercase tracking-wider text-white/40 mb-1">
-                Funder
-              </div>
-              <div className="font-bold text-lg">ARIA · DSIT</div>
-              <div className="text-white/40 text-xs">UK Government R&amp;D funder</div>
-            </div>
+            <svg
+              viewBox="0 0 900 520"
+              className="w-full h-auto max-w-4xl mx-auto"
+              role="img"
+              aria-label="Consortium contracting structure: ARIA contracts AIA as prime; AIA contracts Orbit-RRI, SimplyBD, and HFBAC on back-to-back terms."
+            >
+              <defs>
+                <marker
+                  id="arrowhead"
+                  markerWidth="10"
+                  markerHeight="10"
+                  refX="8"
+                  refY="3"
+                  orient="auto"
+                >
+                  <path d="M0,0 L0,6 L8,3 z" fill="rgba(27,47,60,0.35)" />
+                </marker>
+                <marker
+                  id="arrowhead-turq"
+                  markerWidth="10"
+                  markerHeight="10"
+                  refX="8"
+                  refY="3"
+                  orient="auto"
+                >
+                  <path d="M0,0 L0,6 L8,3 z" fill="#00B1FF" />
+                </marker>
+              </defs>
 
-            <div className="h-6 w-px bg-gable/20 mx-auto" />
+              {/* ARIA box */}
+              <g>
+                <rect
+                  x="320"
+                  y="20"
+                  width="260"
+                  height="70"
+                  rx="10"
+                  fill="#1B2F3C"
+                />
+                <text
+                  x="450"
+                  y="42"
+                  textAnchor="middle"
+                  fill="rgba(255,255,255,0.5)"
+                  fontSize="9"
+                  fontWeight="600"
+                  letterSpacing="1.5"
+                >
+                  FUNDER
+                </text>
+                <text
+                  x="450"
+                  y="63"
+                  textAnchor="middle"
+                  fill="white"
+                  fontSize="18"
+                  fontWeight="700"
+                >
+                  ARIA · DSIT
+                </text>
+                <text
+                  x="450"
+                  y="80"
+                  textAnchor="middle"
+                  fill="rgba(255,255,255,0.5)"
+                  fontSize="11"
+                >
+                  UK government R&amp;D funder
+                </text>
+              </g>
 
-            <div className="bg-gable-deep text-white rounded-lg p-6 max-w-md mx-auto text-center mb-6 relative">
-              <div className="text-[10px] uppercase tracking-wider text-turq mb-1">
-                Prime contractor
-              </div>
-              <div className="font-bold text-lg">AI Accelerator Limited</div>
-              <div className="text-white/40 text-xs">UK Ltd · Mike Chatterton, accountable lead</div>
-              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-3 h-3 bg-gable-deep rotate-45" />
-            </div>
+              {/* ARIA → AIA contract line */}
+              <line
+                x1="450"
+                y1="90"
+                x2="450"
+                y2="150"
+                stroke="#00B1FF"
+                strokeWidth="2"
+                markerEnd="url(#arrowhead-turq)"
+              />
+              <text
+                x="460"
+                y="123"
+                fill="#0080BA"
+                fontSize="10"
+                fontWeight="600"
+              >
+                Prime contract
+              </text>
 
-            <div className="h-6 w-px bg-gable/20 mx-auto" />
+              {/* AIA box */}
+              <g>
+                <rect
+                  x="280"
+                  y="155"
+                  width="340"
+                  height="90"
+                  rx="10"
+                  fill="#0E1A23"
+                  stroke="#00FFBC"
+                  strokeWidth="2"
+                />
+                <text
+                  x="450"
+                  y="180"
+                  textAnchor="middle"
+                  fill="#00FFBC"
+                  fontSize="9"
+                  fontWeight="700"
+                  letterSpacing="1.5"
+                >
+                  PRIME CONTRACTOR · ACCOUNTABLE LEAD
+                </text>
+                <text
+                  x="450"
+                  y="206"
+                  textAnchor="middle"
+                  fill="white"
+                  fontSize="20"
+                  fontWeight="700"
+                >
+                  AI Accelerator Limited
+                </text>
+                <text
+                  x="450"
+                  y="226"
+                  textAnchor="middle"
+                  fill="rgba(255,255,255,0.55)"
+                  fontSize="11"
+                >
+                  UK Ltd · London · Mike Chatterton, founder
+                </text>
+              </g>
 
-            <div className="text-[10px] uppercase tracking-wider text-gable/40 text-center mb-3">
-              Back-to-back subcontractor leads
-            </div>
+              {/* Branching lines AIA → 3 subs */}
+              <path
+                d="M450 245 L450 290 L170 290 L170 340"
+                stroke="rgba(27,47,60,0.4)"
+                strokeWidth="2"
+                fill="none"
+                markerEnd="url(#arrowhead)"
+              />
+              <path
+                d="M450 245 L450 340"
+                stroke="rgba(27,47,60,0.4)"
+                strokeWidth="2"
+                fill="none"
+                markerEnd="url(#arrowhead)"
+              />
+              <path
+                d="M450 245 L450 290 L730 290 L730 340"
+                stroke="rgba(27,47,60,0.4)"
+                strokeWidth="2"
+                fill="none"
+                markerEnd="url(#arrowhead)"
+              />
+              <text
+                x="455"
+                y="278"
+                fill="rgba(27,47,60,0.5)"
+                fontSize="10"
+                fontWeight="600"
+              >
+                Back-to-back subcontracts
+              </text>
 
-            <div className="grid md:grid-cols-3 gap-3 max-w-4xl mx-auto">
-              {[
-                { name: "Orbit-RRI Ltd", role: "Academic / RRI / Trusted Research", colour: "#00B1FF" },
-                { name: "SimplyBD Ltd", role: "Nuclear / industry / convening", colour: "#00B1FF" },
-                { name: "HFBAC · TalentJet", role: "Fellowship operations", colour: "#00B1FF" },
-              ].map((s) => (
-                <div key={s.name} className="rounded-lg border border-gable/20 p-4 text-center bg-paper">
-                  <div className="text-xs font-mono mb-1" style={{ color: s.colour }}>
-                    Sub
-                  </div>
-                  <div className="font-bold text-sm">{s.name}</div>
-                  <div className="text-gable/60 text-xs mt-1">{s.role}</div>
-                </div>
-              ))}
-            </div>
+              {/* Sub 1 — Orbit */}
+              <g>
+                <rect
+                  x="65"
+                  y="345"
+                  width="210"
+                  height="85"
+                  rx="8"
+                  fill="white"
+                  stroke="rgba(27,47,60,0.2)"
+                />
+                <rect x="65" y="345" width="4" height="85" fill="#00B1FF" />
+                <text
+                  x="170"
+                  y="370"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.5)"
+                  fontSize="8"
+                  fontWeight="600"
+                  letterSpacing="1.5"
+                >
+                  SUBCONTRACTOR LEAD
+                </text>
+                <text
+                  x="170"
+                  y="392"
+                  textAnchor="middle"
+                  fill="#1B2F3C"
+                  fontSize="15"
+                  fontWeight="700"
+                >
+                  Orbit-RRI Ltd
+                </text>
+                <text
+                  x="170"
+                  y="410"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.6)"
+                  fontSize="11"
+                >
+                  Academic / RRI /
+                </text>
+                <text
+                  x="170"
+                  y="423"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.6)"
+                  fontSize="11"
+                >
+                  Trusted Research
+                </text>
+              </g>
+
+              {/* Sub 2 — SimplyBD */}
+              <g>
+                <rect
+                  x="345"
+                  y="345"
+                  width="210"
+                  height="85"
+                  rx="8"
+                  fill="white"
+                  stroke="rgba(27,47,60,0.2)"
+                />
+                <rect x="345" y="345" width="4" height="85" fill="#00B1FF" />
+                <text
+                  x="450"
+                  y="370"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.5)"
+                  fontSize="8"
+                  fontWeight="600"
+                  letterSpacing="1.5"
+                >
+                  SUBCONTRACTOR LEAD
+                </text>
+                <text
+                  x="450"
+                  y="392"
+                  textAnchor="middle"
+                  fill="#1B2F3C"
+                  fontSize="15"
+                  fontWeight="700"
+                >
+                  SimplyBD Ltd
+                </text>
+                <text
+                  x="450"
+                  y="410"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.6)"
+                  fontSize="11"
+                >
+                  Nuclear / industry /
+                </text>
+                <text
+                  x="450"
+                  y="423"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.6)"
+                  fontSize="11"
+                >
+                  convening
+                </text>
+              </g>
+
+              {/* Sub 3 — HFBAC */}
+              <g>
+                <rect
+                  x="625"
+                  y="345"
+                  width="210"
+                  height="85"
+                  rx="8"
+                  fill="white"
+                  stroke="rgba(27,47,60,0.2)"
+                />
+                <rect x="625" y="345" width="4" height="85" fill="#00B1FF" />
+                <text
+                  x="730"
+                  y="370"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.5)"
+                  fontSize="8"
+                  fontWeight="600"
+                  letterSpacing="1.5"
+                >
+                  SUBCONTRACTOR LEAD
+                </text>
+                <text
+                  x="730"
+                  y="392"
+                  textAnchor="middle"
+                  fill="#1B2F3C"
+                  fontSize="15"
+                  fontWeight="700"
+                >
+                  HFBAC · TalentJet
+                </text>
+                <text
+                  x="730"
+                  y="410"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.6)"
+                  fontSize="11"
+                >
+                  Fellowship operations
+                </text>
+                <text
+                  x="730"
+                  y="423"
+                  textAnchor="middle"
+                  fill="rgba(27,47,60,0.6)"
+                  fontSize="11"
+                >
+                  Chemistry First
+                </text>
+              </g>
+
+              {/* Open source outflow arrow */}
+              <path
+                d="M620 200 L820 200"
+                stroke="#00FFBC"
+                strokeWidth="2"
+                strokeDasharray="4 4"
+                fill="none"
+                markerEnd="url(#arrowhead-turq)"
+              />
+              <text
+                x="720"
+                y="190"
+                textAnchor="middle"
+                fill="#007A5E"
+                fontSize="10"
+                fontWeight="700"
+                letterSpacing="0.5"
+              >
+                Open-source skills · MIT
+              </text>
+              <text
+                x="720"
+                y="215"
+                textAnchor="middle"
+                fill="rgba(0, 122, 94, 0.7)"
+                fontSize="10"
+              >
+                to any UK research team
+              </text>
+
+              {/* Co-investment annotation */}
+              <text
+                x="80"
+                y="200"
+                fill="rgba(27,47,60,0.5)"
+                fontSize="10"
+                fontWeight="600"
+              >
+                In-kind from AIA:
+              </text>
+              <text x="80" y="215" fill="rgba(27,47,60,0.6)" fontSize="10">
+                · Platform
+              </text>
+              <text x="80" y="228" fill="rgba(27,47,60,0.6)" fontSize="10">
+                · ~1,000 use cases
+              </text>
+              <text x="80" y="241" fill="rgba(27,47,60,0.6)" fontSize="10">
+                · Highest Tide methodology
+              </text>
+
+              {/* Year 1 envelope label */}
+              <g>
+                <rect
+                  x="370"
+                  y="465"
+                  width="160"
+                  height="32"
+                  rx="16"
+                  fill="rgba(0, 122, 94, 0.10)"
+                />
+                <text
+                  x="450"
+                  y="485"
+                  textAnchor="middle"
+                  fill="#007A5E"
+                  fontSize="11"
+                  fontWeight="700"
+                >
+                  £3m · Year 1 envelope · phase-gated
+                </text>
+              </g>
+            </svg>
 
             <div className="mt-8 grid md:grid-cols-3 gap-4 text-sm text-gable/70">
               <div className="flex items-start gap-2">

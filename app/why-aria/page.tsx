@@ -123,6 +123,74 @@ export default function Page() {
               </p>
             </div>
           </div>
+
+          {/* COHORT 1 MAP */}
+          <div className="mt-12 card">
+            <div className="text-[10px] uppercase tracking-wider text-gable/50 font-semibold mb-3">
+              Cohort 1 — what each partner does
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+              {[
+                { name: "Pillar VC", role: "VC fellowship · AI talent", tag: "VC" },
+                { name: "Renaissance", role: "New R&D org types", tag: "R&D org" },
+                { name: "Convergent", role: "FRO model", tag: "R&D org" },
+                { name: "Cambridge NeuroWorks", role: "Neurotech testbed", tag: "Community" },
+                { name: "Fifty Years", role: "Pre-company building", tag: "VC" },
+                { name: "Amodo Design", role: "Bespoke hardware", tag: "Hardware" },
+                { name: "Nucleate UK", role: "Biotech community", tag: "Community" },
+                { name: "DeepMind", role: "Science 2030 strategy", tag: "Lab" },
+                { name: "Venture Café", role: "Cross-sector gatherings", tag: "Community" },
+              ].map((p) => (
+                <div
+                  key={p.name}
+                  className="rounded-lg border border-gable/15 p-3 text-center bg-white"
+                >
+                  <div className="text-[9px] uppercase tracking-wider text-gable/40 mb-1">
+                    {p.tag}
+                  </div>
+                  <div className="font-bold text-[12px] leading-tight">
+                    {p.name}
+                  </div>
+                  <div className="text-[10px] text-gable/60 mt-1 leading-tight">
+                    {p.role}
+                  </div>
+                </div>
+              ))}
+              {/* The gap */}
+              <div
+                className="rounded-lg p-3 text-center"
+                style={{
+                  border: "2px dashed #007A5E",
+                  background: "rgba(0, 255, 188, 0.05)",
+                }}
+              >
+                <div
+                  className="text-[9px] uppercase tracking-wider mb-1 font-bold"
+                  style={{ color: "#007A5E" }}
+                >
+                  The gap
+                </div>
+                <div
+                  className="font-bold text-[12px] leading-tight"
+                  style={{ color: "#007A5E" }}
+                >
+                  Frontier Methods
+                </div>
+                <div
+                  className="text-[10px] mt-1 leading-tight"
+                  style={{ color: "#007A5E" }}
+                >
+                  AI capability enablement
+                </div>
+              </div>
+            </div>
+            <p className="text-[11px] text-gable/50 mt-3 italic">
+              Cohort 1 is excellent at venture, community, and frontier R&amp;D
+              org-building. Nobody&apos;s job is the enablement layer:
+              making AI techniques usable inside the labs ARIA has already
+              funded. That&apos;s exactly the slot Cohort 2 explicitly opened.
+            </p>
+          </div>
         </div>
       </section>
 

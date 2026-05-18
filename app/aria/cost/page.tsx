@@ -106,9 +106,20 @@ export default function Page() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-[11px] text-gable/40 mt-3">
-              Indicative shape — the live cost-sheet PDF (v3) is in /aria/documents. Day rate harmonised at £1,600 for named-lead time; T&amp;M billed monthly in arrears.
-            </p>
+            <div className="text-[12px] text-gable/60 mt-4 p-3 bg-yellow-50 border-l-2 border-yellow-400 rounded-r leading-relaxed">
+              <strong className="text-gable">Illustrative figures.</strong>{" "}
+              The numbers above show the cost shape only. The canonical
+              commercial position lives in the live cost sheet (v3, submitted
+              with the bid). Request a current copy via{" "}
+              <a
+                href="mailto:mike@aiaccelerator.uk?subject=ARIA%20bid%20%C2%B7%20request%3A%20cost%20sheet%20v3"
+                className="text-turq-text font-semibold hover:text-gable transition"
+              >
+                /aria/documents
+              </a>
+              . Day rate harmonised at £1,600 for named-lead time; T&amp;M
+              billed monthly in arrears.
+            </div>
           </div>
         </div>
       </section>
