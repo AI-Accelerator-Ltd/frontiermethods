@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --gable: #1B2F3C;
+  --gable-deep: #0E1A23;
+  --turq: #00FFBC;
+  --turq-text: #007A5E;
+  --dodger: #00B1FF;
+  --cream: #F7F3EB;
+  --paper: #FCFAF5;
+}
+
+html, body {
+  background: var(--paper);
+  color: var(--gable);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: rgba(0, 177, 255, 0.25); }
+
+@layer components {
+  .h-display {
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.025em;
+  }
+  .h-section {
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+  .h-card {
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    line-height: 1.2;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .tag-turq { background: rgba(0, 122, 94, 0.12); color: var(--turq-text); }
+  .tag-dodger { background: rgba(0, 177, 255, 0.12); color: var(--dodger); }
+  .tag-gable { background: rgba(27, 47, 60, 0.08); color: var(--gable); }
+  .tag-warn { background: rgba(217, 75, 75, 0.12); color: #a93232; }
+  .tag-on-dark-turq { background: rgba(0, 255, 188, 0.14); color: var(--turq); }
+  .tag-on-dark-dodger { background: rgba(0, 177, 255, 0.16); color: var(--dodger); }
+  .tag-on-dark-white { background: rgba(255, 255, 255, 0.10); color: white; }
+
+  .card {
+    background: white;
+    border: 1px solid rgba(27, 47, 60, 0.08);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(27, 47, 60, 0.10);
+    border-color: rgba(27, 47, 60, 0.12);
+  }
+  .card-dark {
+    background: var(--gable-deep);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    color: white;
+  }
+
+  .glyph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background: rgba(27, 47, 60, 0.06);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--gable);
+  }
+  .glyph-dark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: white;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(27, 47, 60, 0.15), transparent);
+    margin: 3rem 0;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--gable);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .btn-primary:hover { background: var(--gable-deep); }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gable);
+    padding: 0.7rem 1.2rem;
+    border: 1px solid rgba(27, 47, 60, 0.15);
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.15s;
+    background: white;
+  }
+  .btn-ghost:hover { background: var(--cream); border-color: rgba(27, 47, 60, 0.25); }
+
+  .btn-ghost-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .btn-ghost-dark:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.3); }
+
+  .stat-block {
+    background: var(--gable-deep);
+    padding: 1.25rem 1.25rem;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+
+  .grad-text {
+    background: linear-gradient(90deg, var(--turq), var(--dodger));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
