@@ -40,7 +40,7 @@ export default function Page() {
         eyebrow="Evidence"
         title={<>Real use cases. Real clients. Real track record.</>}
         lede="Fourteen seed use cases drawn from AIA's enterprise library, each mapped to its research analogue. Plus the FTSE-250 client list AIA delivers against today."
-        meta="For Aayush · external reviewer · PDs"
+        meta="For AI-in-Science · external reviewer · PDs"
       />
 
       <section className="py-20 bg-paper">

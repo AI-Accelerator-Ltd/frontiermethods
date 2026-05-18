@@ -19,21 +19,21 @@ const AIA_TEAM = [
     name: "Ross Pepperell",
     role: "Chief AI Officer",
     time: "50% Year 1, rising to 80% Year 2",
-    body: "Platform technical lead and senior skill developer. Drives the technical bench credibility Aayush Chadha tests for: builds the agent harnesses, evaluation rigs, and reference implementations that ship with each skill.",
+    body: "Platform technical lead and senior skill developer. Drives the technical bench credibility ARIA's AI-in-Science reviewer tests for: builds the agent harnesses, evaluation rigs, and reference implementations that ship with each skill.",
     track: "Owns the AI capability stack across AIA's enterprise engagements. Has shipped governance-by-competency in production at Virgin Red.",
   },
   {
     name: "Andreea Iaconi",
     role: "AI Technician",
     time: "100% (ramps from 1 day/week to full-time over Year 1)",
-    body: "Platform build and open-source skill shipping. Owns the GitHub release operations and the technique-card-to-skill pipeline. The person Aayush Chadha will technically interrogate first.",
+    body: "Platform build and open-source skill shipping. Owns the GitHub release operations and the technique-card-to-skill pipeline. The person ARIA's AI-in-Science reviewer will technically interrogate first.",
     track: "Already operating inside AIA's delivery, building and maintaining the platform v0 used in the demo.",
   },
   {
     name: "Jeremy Steer",
     role: "Chief Operating Officer",
     time: "30% Year 1",
-    body: "Commercials, contracting, impact measurement, and procurement-facing accountability for the consortium. The named point of contact for ARIA's procurement and finance teams (Tammy Thomas-Brown, Olivia Donovan, Antonia Jenkinson).",
+    body: "Commercials, contracting, impact measurement, and procurement-facing accountability for the consortium. The named point of contact for ARIA's procurement, contracts, and finance functions.",
     track: "Runs AIA's operating cadence. Will own the quarterly progress reporting and the unit-economics modelling.",
   },
   {
@@ -78,8 +78,8 @@ export default function Page() {
       <PageHeader
         eyebrow="04 · The team"
         title={<>One named founder. Three named operators. One accountable prime.</>}
-        lede="Matt Clifford reads bids like an Entrepreneur First application — he wants one obsessed founder, not a steering committee. This bid is structured to pass that test. AIA Ltd is the single accountable contracting entity; Mike is named bid lead; three operators carry domain delivery scope with public track records."
-        meta="Clifford · Fisher · Tammy Thomas-Brown"
+        lede="ARIA's Chair reads bids like an Entrepreneur First application — he wants one accountable founder, not a steering committee. This bid is structured to pass that test. AIA Ltd is the single accountable contracting entity; Mike is named bid lead; three operators carry domain delivery scope with public track records."
+        meta="Chair · CEO · procurement"
       />
 
       {/* AIA CORE TEAM */}

@@ -129,7 +129,7 @@ export default function Page() {
       <section className="py-20 bg-gable text-white">
         <div className="max-w-8xl mx-auto px-5 lg:px-8">
           <div className="max-w-3xl mb-12">
-            <span className="tag tag-on-dark-turq mb-3">For Antonia Jenkinson</span>
+            <span className="tag tag-on-dark-turq mb-3">For ARIA&apos;s CFO</span>
             <h2 className="h-section text-3xl md:text-5xl mt-3 mb-4 text-white">
               Four go/no-go milestones in Year 1.
             </h2>

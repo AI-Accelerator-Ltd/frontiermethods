@@ -16,7 +16,7 @@ export default function Page() {
         eyebrow="01 · The opportunity"
         title={<>Why ARIA. Why now. Why us.</>}
         lede="The Cohort 2 brief explicitly opens a new partner category for AI capability. Cohort 1 contains no enablement layer for the Creators ARIA has already funded. The political moment, the cost-collapse of building, and ARIA's unique funding shape converge on the same answer: a UK-led, UK-built, UK-owned platform that runs alongside ARIA's Programme Directors and inside Creator teams."
-        meta="Pranay · Clifford · Fisher"
+        meta="Programme · Chair · CEO"
       />
 
       {/* THE COHORT 2 OPENING */}

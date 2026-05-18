@@ -51,8 +51,8 @@ export default function Page() {
       <PageHeader
         eyebrow="05 · Consortium"
         title={<>Clean prime/sub structure. One contracting entity.</>}
-        lede="Tammy Thomas-Brown will read for a named legal prime, named back-to-back flow-down terms, clean conflicts handling, and supplier resilience. This page is structured exactly for that read."
-        meta="Tammy · Olivia · Antonia"
+        lede="ARIA's procurement and contracts function will read for a named legal prime, named back-to-back flow-down terms, clean conflicts handling, and supplier resilience. This page is structured exactly for that read."
+        meta="Procurement · contracts · CFO"
       />
 
       {/* CONSORTIUM DIAGRAM */}

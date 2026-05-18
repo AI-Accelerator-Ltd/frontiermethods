@@ -32,8 +32,8 @@ export default function Page() {
       <PageHeader
         eyebrow="Cost & commercials"
         title={<>£10m over three years. Phase-gated. Worked unit economics.</>}
-        lede="Built for Antonia Jenkinson's model. ARIA's CFO can pull at four named milestones. Marginal cost per vertical decreases as the platform compounds. Day rates harmonised across operators. Zero foreground IP claim."
-        meta="For Antonia · Tammy · Olivia"
+        lede="Built for the CFO's model. ARIA can pull at four named milestones. Marginal cost per vertical decreases as the platform compounds. Day rates harmonised across operators. Zero foreground IP claim."
+        meta="For CFO · procurement · contracts"
       />
 
       {/* PHASE-GATED ENVELOPE */}
@@ -69,7 +69,7 @@ export default function Page() {
         <div className="max-w-8xl mx-auto px-5 lg:px-8">
           <SectionHeader
             eyebrow="Eight work packages"
-            title="The cost-sheet decomposition Olivia Donovan can compare line by line."
+            title="A cost-sheet decomposition contracts can compare line by line."
             lede="Each work package corresponds to one of the eight operational components. Internally consistent: FTEs in the cost sheet match the named team in the bid. No work package without a corresponding narrative; no narrative without a corresponding line."
           />
 
@@ -122,7 +122,7 @@ export default function Page() {
               Marginal cost drops as the platform compounds.
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
-              Antonia Jenkinson will model the unit economics. So have we. The
+              ARIA&apos;s CFO will model the unit economics. So have we. The
               marginal cost of vertical 80 is a fraction of the marginal cost
               of vertical 8 because AI-assisted onboarding does the heavy
               lifting. This is what makes scale to ~100 verticals credible at
@@ -160,7 +160,7 @@ export default function Page() {
           <SectionHeader
             eyebrow="Co-investment"
             title="Skin in the game."
-            lede="AIA contributes the platform, the seed library, and the methodology in kind. ARIA funding pays for the network around it. This signals the commitment Antonia Jenkinson evaluates for."
+            lede="AIA contributes the platform, the seed library, and the methodology in kind. ARIA funding pays for the network around it. This signals the commitment ARIA's finance and operations function evaluates for."
           />
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card border-l-4 !border-l-turq">

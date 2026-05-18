@@ -16,7 +16,7 @@ const SHIPPED = [
     title: "Peer review pre-check",
     description:
       "AI pre-reviewer for grant submissions, milestone reports, and manuscript drafts. Checks against any rubric (ARIA criteria, UKRI, internal panel) before the human reviewer sees it. Raises the floor on submitted quality.",
-    status: "Shipped",
+    status: "Releasing this week",
     statusColor: "turq",
     license: "MIT",
     language: "Claude skill + Python eval rig",
@@ -78,15 +78,15 @@ export default function SkillsPage() {
       <section className="py-20 bg-paper">
         <div className="max-w-8xl mx-auto px-5 lg:px-8">
           <div className="mb-10 max-w-3xl">
-            <span className="tag tag-turq mb-3">Shipped today</span>
+            <span className="tag tag-turq mb-3">First release</span>
             <h2 className="h-section text-3xl md:text-5xl mt-3 mb-4">
-              The first skill is in the repo.
+              The first skill is ready.
             </h2>
             <p className="text-lg text-gable/70 leading-relaxed">
-              Frontier Methods launched with one real, working open-source
-              skill on day one — not vaporware. More skills are released on
-              the schedule below, with the evaluation rig published in the
-              same commit as the skill itself.
+              Frontier Methods&apos; first open-source skill is built, tested,
+              and ready to ship — README, SKILL.md, evaluation rig, MIT
+              licence. The public repository opens this week. More skills
+              follow on the schedule below.
             </p>
           </div>
 
@@ -141,12 +141,12 @@ export default function SkillsPage() {
                   </div>
                 </div>
                 <a
-                  href={`https://${SITE.github}${s.repoSuffix}`}
+                  href={`https://${SITE.github}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary shrink-0"
                 >
-                  <Download size={14} /> Pull from GitHub
+                  <Github size={14} /> View on GitHub
                 </a>
               </div>
             </div>

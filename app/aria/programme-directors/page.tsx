@@ -33,7 +33,7 @@ const PDS = [
 ];
 
 const FIRST_90 = [
-  { week: "Week 1–2", action: "Mike + named operator meet PD. Read PD's published opportunity space document end-to-end. Quote it back at the kick-off (Pranay's test)." },
+  { week: "Week 1–2", action: "Mike + named operator meet PD. Read PD's published opportunity space document end-to-end. Quote it back at the kick-off." },
   { week: "Week 3–4", action: "Identify 2–3 named Creators in the PD's cohort for the Year-1 engagement. Light intros." },
   { week: "Week 5–6", action: "First Fellow placement begins (recruited in parallel from month 1 of Year 1)." },
   { week: "Week 7–8", action: "First technique card co-authored with a Creator." },
@@ -48,7 +48,7 @@ export default function Page() {
         eyebrow="Programme Director partnerships"
         title={<>Three named PD partnerships in Year 1. Time-bound. Low-overhead. Creator-led.</>}
         lede="Each PD partnership is a year-long engagement with a low time-commitment ask on the PD and a high concentration of value flowing back. Two hours/month minimum. One day/month maximum. Written into the contract explicitly, so neither side is surprised."
-        meta="For PDs · Pranay · external reviewer"
+        meta="For PDs · Activation Partners team · external reviewer"
       />
 
       <section className="py-20 bg-paper">
@@ -119,9 +119,9 @@ export default function Page() {
               The concrete first quarter the PD persona asks for.
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
-              Pranay&apos;s test and the PD persona&apos;s test land in the
-              same place: <em>what specifically would you do for MY Creators in MY
-              space in MY first quarter?</em> Here&apos;s the answer.
+              The Programme Director&apos;s test lands in one place: <em>what
+              specifically would you do for my Creators in my space in my
+              first quarter?</em> Here&apos;s the answer.
             </p>
           </div>
           <div className="space-y-3">

@@ -65,5 +65,7 @@ export const SITE = {
   contractStart: "1 September 2026",
   email: "hello@frontiermethods.com",
   founderEmail: "mike@aiaccelerator.uk",
-  github: "github.com/frontier-methods",
+  github: "github.com/AI-Accelerator-Ltd",
+  githubRepo: "github.com/AI-Accelerator-Ltd/frontiermethods",
+  githubSkillRepo: "github.com/AI-Accelerator-Ltd/peer-review-pre-check",
 };

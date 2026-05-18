@@ -219,11 +219,12 @@ export default function AriaBidHome() {
               The seven questions that decide this bid.
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
-              We modelled nine reviewers — Pranay, Aayush, Tammy, Olivia,
-              Kathleen Fisher, Antonia Jenkinson, Matt Clifford, an external
-              academic expert, and a Programme Director. Across all of them,
-              the same seven critique vectors recur. Here&apos;s where the bid
-              concentrates its answers.
+              We modelled nine reviewer lenses: the Activation Partners
+              product team, the AI-in-Science specialist, ARIA&apos;s
+              procurement and contracts team, ARIA&apos;s CEO and CFO, the
+              ARIA Chair, an external academic reviewer, and a Programme
+              Director. Across all of them, the same seven critique vectors
+              recur. Here&apos;s where the bid concentrates its answers.
             </p>
           </div>
 
@@ -391,7 +392,7 @@ export default function AriaBidHome() {
 
 const ROUTES = [
   {
-    audience: "Pranay Shah — counterfactual",
+    audience: "The counterfactual question",
     title: "Why ARIA, why now",
     lede: "The Cohort 2 capability gap, the political moment, and the counterfactual: cross-tenant insight no commercial customer ever pays for.",
     cta: "Why ARIA, why now",
@@ -399,7 +400,7 @@ const ROUTES = [
     icon: <Flame size={16} />,
   },
   {
-    audience: "Aayush Chadha — AI substance",
+    audience: "AI substance",
     title: "Platform & methods",
     lede: "Working demo of cross-vertical technique surfacing, plus the methods walkthrough. AI capability, not adoption coaching.",
     cta: "Open the platform demo",
@@ -407,7 +408,7 @@ const ROUTES = [
     icon: <CircuitBoard size={16} />,
   },
   {
-    audience: "Kathleen Fisher — technical surprise",
+    audience: "Technical surprise",
     title: "Solution architecture",
     lede: "Eight operational components, four data objects, the open-source release cycle, evaluation rigs on every skill.",
     cta: "Read the solution design",
@@ -415,7 +416,7 @@ const ROUTES = [
     icon: <Layers size={16} />,
   },
   {
-    audience: "Antonia Jenkinson — unit economics",
+    audience: "Unit economics",
     title: "Cost & commercials",
     lede: "Phase-gated £3m + £3.5m + £3.5m envelope. Worked unit economics. Clean prime/sub structure. Zero foreground-IP.",
     cta: "Read the commercials",
@@ -423,7 +424,7 @@ const ROUTES = [
     icon: <PoundSterling size={16} />,
   },
   {
-    audience: "Tammy Thomas-Brown — procurement",
+    audience: "Procurement defensibility",
     title: "Risks & governance",
     lede: "Named risks, named mitigations. Highest Tide governance methodology. Shadow Robot Chinese-wall. Substitution plan.",
     cta: "Read the risk register",
@@ -431,7 +432,7 @@ const ROUTES = [
     icon: <ShieldCheck size={16} />,
   },
   {
-    audience: "Matt Clifford — UK benefit + founder",
+    audience: "UK economic benefit + founder",
     title: "Team & founder spotlight",
     lede: "Mike personally underwrites the bid. Three named operators. No four-logo committee. The single accountable lead Clifford asks for.",
     cta: "Meet the team",
@@ -439,7 +440,7 @@ const ROUTES = [
     icon: <Users size={16} />,
   },
   {
-    audience: "External reviewer — academic credibility",
+    audience: "Academic credibility",
     title: "Programme Directors & evidence",
     lede: "Three named PD partnerships in Year 1 (Bramhavar, Dalrymple, Wang/Wurm). Fourteen seeded use cases. Named first Creators.",
     cta: "See the evidence",
@@ -447,7 +448,7 @@ const ROUTES = [
     icon: <Beaker size={16} />,
   },
   {
-    audience: "Programme Director — Creator value",
+    audience: "Creator value, first quarter",
     title: "Programme & timeline",
     lede: "Month-by-month Year 1 launch sequence. Time-bound first-quarter commitments. Two hours/month minimum, one day max.",
     cta: "Read the programme",
@@ -467,49 +468,49 @@ const ROUTES = [
 const CRITIQUES = [
   {
     title: "Counterfactual / additionality",
-    who: "Pranay Shah · Matt Clifford · Kathleen Fisher · external reviewer",
+    who: "Programme · executive · external academic reviewer",
     answer:
       "AIA already builds the commercial version of this platform for individual enterprises. The shared, public-good UK platform with cross-tenant insight is something no commercial customer ever pays for. ARIA is the only possible funder.",
     href: "/why-aria",
   },
   {
     title: "AI capability vs adoption coaching",
-    who: "Aayush Chadha · Kathleen Fisher · external reviewer",
+    who: "AI-in-Science specialist · executive · external academic reviewer",
     answer:
       "30+ open-source AI skills shipped Year 1, each with an evaluation rig. Embedded AI Practitioner Fellows inside Creator teams. Three named Programme Director partnerships co-designing technique cards at the bench, not in workshops.",
     href: "/aria/open-source",
   },
   {
     title: "Named founder vs four-logo committee",
-    who: "Matt Clifford · Kathleen Fisher",
+    who: "Chair · CEO",
     answer:
       "Mike Chatterton is named bid lead and personally underwrites the proposal. Three named operators (Martin de Heaver, Alix Johnstone-Morfoisse, Helen Wingrove-Sanders) carry delivery scope. One accountable contracting entity (AIA Ltd).",
     href: "/team",
   },
   {
     title: "Cost realism & unit economics",
-    who: "Antonia Jenkinson · Tammy Thomas-Brown · Olivia Donovan",
+    who: "CFO · procurement · contracts",
     answer:
       "Phase-gated trajectory: £3m Y1 (6 verticals), £3.5m Y2 (~30 verticals, conditional), £3.5m Y3 (~100 verticals, conditional). Marginal cost per vertical drops as AI-assisted onboarding compounds. Worked unit economics published.",
     href: "/aria/cost",
   },
   {
     title: "IP & conflicts of interest",
-    who: "Antonia Jenkinson · Tammy Thomas-Brown",
+    who: "CFO · procurement",
     answer:
       "Zero foreground-IP claim by the consortium. Skills MIT-licensed. Platform, methodology, and seed library remain AIA-contributed in-kind. HFBAC's 10-year Shadow Robot embed declared with explicit Chinese-wall: no fellow placed at Shadow Robot under the ARIA contract.",
     href: "/aria/governance",
   },
   {
     title: "UK economic benefit",
-    who: "Matt Clifford · Pranay Shah · Kathleen Fisher",
+    who: "Chair · Programme · CEO",
     answer:
       "UK-domiciled prime. UK-resident staff. UK-only delivery. Open-source UK outputs released from Year 1 — directly answering the April 2025 £50m-to-US-firms criticism. UK-attributable jobs, fellowships, and capability uplift quantified quarterly.",
     href: "/aria/open-source",
   },
   {
     title: "Concrete first quarter for a named space",
-    who: "Programme Directors · Pranay Shah",
+    who: "Programme Directors · Activation Partners team",
     answer:
       "First 90 days mapped per PD partnership. We read the opportunity space document end-to-end at week 1 and quote it back at kick-off. Named first Creators by week 4. First technique card co-authored by week 8. Joint publication by week 9.",
     href: "/aria/programme-directors",
@@ -521,7 +522,7 @@ const YEAR_ONE = [
     headline:
       "Release at least 30 open-source AI skills — ARIA-co-branded, MIT-licensed, each with an evaluation rig — directly applicable to the existing Creator cohort.",
     detail:
-      "Ships on a public GitHub repository (github.com/frontier-methods). Two skills released in Q4 events. Adversarial review window on each release. Quality bar owned by the Year-1 senior hire.",
+      "Ships on a public GitHub repository (github.com/AI-Accelerator-Ltd). Two skills released in Q4 events. Adversarial review window on each release. Quality bar owned by the Year-1 senior hire.",
   },
   {
     headline:

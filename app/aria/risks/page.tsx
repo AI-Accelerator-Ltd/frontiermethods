@@ -35,7 +35,7 @@ const RISKS = [
   },
   {
     title: "Open-source skill quality is unevaluated",
-    detail: "Aayush Chadha's residual scepticism returns — 'where's the evidence the skills work?'",
+    detail: "The AI-in-Science reviewer's residual scepticism returns — 'where's the evidence the skills work?'",
     likelihood: "Medium",
     impact: "High",
     mitigation:
@@ -64,7 +64,7 @@ export default function Page() {
         eyebrow="Risks & mitigations"
         title={<>Five risks. Five named mitigations. One substitution plan.</>}
         lede="No bid this size has zero risk. The question is whether the risks are named, sized, mitigated, and contractually catered for. They are."
-        meta="For Tammy · Olivia · Antonia"
+        meta="For procurement · contracts · CFO"
       />
 
       <section className="py-20 bg-paper">
@@ -113,9 +113,10 @@ export default function Page() {
               If any sub fails, AIA absorbs the role within 30 days.
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
-              Tammy Thomas-Brown will check this. Each subcontractor lead has
-              a named fallback path. AIA, as prime, holds the cash-flow risk
-              and the substitution obligation.
+              ARIA&apos;s procurement and contracts function will check this.
+              Each subcontractor lead has a named fallback path. AIA, as
+              prime, holds the cash-flow risk and the substitution
+              obligation.
             </p>
           </div>
 

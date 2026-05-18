@@ -375,7 +375,7 @@ export const SKILLS: Record<string, Skill> = {
   "s-peer-review": {
     id: "s-peer-review",
     name: "peer-review-pre-check",
-    repo: "github.com/uk-technique-library/peer-review-pre-check",
+    repo: "github.com/AI-Accelerator-Ltd/peer-review-pre-check",
     description:
       "Claude skill + eval harness for pre-reviewing grant submissions, milestone reports, or manuscript drafts against a funder rubric.",
     language: "Claude skill · Python eval rig",
@@ -388,7 +388,7 @@ export const SKILLS: Record<string, Skill> = {
   "s-living-docs": {
     id: "s-living-docs",
     name: "living-docs-pipeline",
-    repo: "github.com/uk-technique-library/living-docs-pipeline",
+    repo: "github.com/AI-Accelerator-Ltd/living-docs-pipeline",
     description:
       "Cursor rule pack + agent harness for keeping experimental protocol and codebase documentation always-current. Hooks into git history.",
     language: "Cursor rule + Python agent",
@@ -401,7 +401,7 @@ export const SKILLS: Record<string, Skill> = {
   "s-grant-writing": {
     id: "s-grant-writing",
     name: "grant-drafting-skill",
-    repo: "github.com/uk-technique-library/grant-drafting-skill",
+    repo: "github.com/AI-Accelerator-Ltd/grant-drafting-skill",
     description:
       "Claude skill for capturing the standard elements of a grant (team CVs, Gantt, EDI, risk register, project background) so new bids focus on the novel scientific case.",
     language: "Claude skill",
@@ -414,7 +414,7 @@ export const SKILLS: Record<string, Skill> = {
   "s-data-verification": {
     id: "s-data-verification",
     name: "data-trust-score",
-    repo: "github.com/uk-technique-library/data-trust-score",
+    repo: "github.com/AI-Accelerator-Ltd/data-trust-score",
     description: "Cross-references figures against trusted source systems and outputs a per-figure trust score before approval.",
     language: "Python · LangGraph",
     modelAgnostic: true,
@@ -423,12 +423,12 @@ export const SKILLS: Record<string, Skill> = {
     downloads: 92,
     releaseDate: "Month 5 · Jan 2027",
   },
-  "s-lit-monitoring": { id: "s-lit-monitoring", name: "lit-monitor", repo: "github.com/uk-technique-library/lit-monitor", description: "Continuous monitoring agent for preprints, regulators, and standards bodies.", language: "Python · cron-friendly", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 64, releaseDate: "Month 5 · Jan 2027" },
-  "s-data-extraction": { id: "s-data-extraction", name: "any-pdf-to-csv", repo: "github.com/uk-technique-library/any-pdf-to-csv", description: "Heterogeneous PDF → structured data with confidence scores.", language: "Python", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 215, releaseDate: "Month 6 · Feb 2027" },
-  "s-glossary": { id: "s-glossary", name: "team-glossary", repo: "github.com/uk-technique-library/team-glossary", description: "Cross-disciplinary glossary generator + on-hover definitions.", language: "Claude skill", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 71, releaseDate: "Month 4 · Dec 2026" },
-  "s-routing": { id: "s-routing", name: "lab-routing-agent", repo: "github.com/uk-technique-library/lab-routing-agent", description: "Routes lab-team coordination across distributed sites.", language: "Python · agentic", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 38, releaseDate: "Month 7 · Mar 2027" },
-  "s-legislative": { id: "s-legislative", name: "legislative-summariser", repo: "github.com/uk-technique-library/legislative-summariser", description: "Standards & legislation summariser with team-domain tailoring.", language: "Claude skill", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 47, releaseDate: "Month 8 · Apr 2027" },
-  "s-mindmap": { id: "s-mindmap", name: "concept-explorer", repo: "github.com/uk-technique-library/concept-explorer", description: "Phase-0 problem framing co-researcher.", language: "Claude skill", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 58, releaseDate: "Month 6 · Feb 2027" },
+  "s-lit-monitoring": { id: "s-lit-monitoring", name: "lit-monitor", repo: "github.com/AI-Accelerator-Ltd/lit-monitor", description: "Continuous monitoring agent for preprints, regulators, and standards bodies.", language: "Python · cron-friendly", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 64, releaseDate: "Month 5 · Jan 2027" },
+  "s-data-extraction": { id: "s-data-extraction", name: "any-pdf-to-csv", repo: "github.com/AI-Accelerator-Ltd/any-pdf-to-csv", description: "Heterogeneous PDF → structured data with confidence scores.", language: "Python", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 215, releaseDate: "Month 6 · Feb 2027" },
+  "s-glossary": { id: "s-glossary", name: "team-glossary", repo: "github.com/AI-Accelerator-Ltd/team-glossary", description: "Cross-disciplinary glossary generator + on-hover definitions.", language: "Claude skill", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 71, releaseDate: "Month 4 · Dec 2026" },
+  "s-routing": { id: "s-routing", name: "lab-routing-agent", repo: "github.com/AI-Accelerator-Ltd/lab-routing-agent", description: "Routes lab-team coordination across distributed sites.", language: "Python · agentic", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 38, releaseDate: "Month 7 · Mar 2027" },
+  "s-legislative": { id: "s-legislative", name: "legislative-summariser", repo: "github.com/AI-Accelerator-Ltd/legislative-summariser", description: "Standards & legislation summariser with team-domain tailoring.", language: "Claude skill", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 47, releaseDate: "Month 8 · Apr 2027" },
+  "s-mindmap": { id: "s-mindmap", name: "concept-explorer", repo: "github.com/AI-Accelerator-Ltd/concept-explorer", description: "Phase-0 problem framing co-researcher.", language: "Claude skill", modelAgnostic: true, evalRig: true, license: "MIT", downloads: 58, releaseDate: "Month 6 · Feb 2027" },
 };
 
 export const LENS_LABELS = {

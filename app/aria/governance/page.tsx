@@ -23,7 +23,7 @@ export default function Page() {
         eyebrow="Governance"
         title={<>Highest Tide: governance by user competency, not data class.</>}
         lede="Risk is about how a person uses what they already have. Even consumer AI can be used in EU AI Act-violating ways by an untrained user with legitimate access. The Highest Tide methodology attaches governance to the use case, not the data source — and the assessment travels with the use case across labs and institutions."
-        meta="For Antonia · Tammy"
+        meta="For CFO · procurement"
       />
 
       {/* THREE CLAIMS */}
@@ -115,8 +115,9 @@ export default function Page() {
               Zero foreground-IP claim by the consortium.
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
-              Antonia Jenkinson personally wrote ARIA&apos;s no-foreground-IP
-              policy. Our IP terms operationalise it visibly.
+              ARIA&apos;s published no-foreground-IP policy was authored
+              inside its finance and operations function. Our IP terms
+              operationalise it visibly.
             </p>
           </div>
 

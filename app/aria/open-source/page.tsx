@@ -17,7 +17,7 @@ export default function Page() {
         eyebrow="Open-source commitment"
         title={<>Every operational skill ships open-source. From Year 1. ARIA co-branded.</>}
         lede="This is the cleanest possible answer to the April 2025 £50m-to-US-firms criticism. UK-built skills, MIT-licensed, on a public UK-led GitHub organisation, available to any UK research team funded by anyone. This is what UK economic benefit looks like operationalised."
-        meta="For Matt Clifford · Pranay · Aayush"
+        meta="For Chair · Programme · AI-in-Science"
       />
 
       <section className="py-20 bg-paper">
@@ -43,10 +43,9 @@ export default function Page() {
               <div className="glyph mb-3">02</div>
               <h3 className="h-card text-base mb-2">No-foreground-IP alignment</h3>
               <p className="text-sm text-gable/70 leading-relaxed">
-                Antonia Jenkinson personally wrote ARIA&apos;s
-                no-foreground-IP policy. Open-source release operationalises
-                that visibly. No ambiguity, no licence-fee implications
-                later.
+                ARIA&apos;s no-foreground-IP policy is a foundational design
+                choice. Open-source release operationalises it visibly. No
+                ambiguity, no licence-fee implications later.
               </p>
             </div>
             <div className="card border-l-4 !border-l-gable">

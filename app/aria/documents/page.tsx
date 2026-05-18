@@ -1,7 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import PageNav from "@/components/PageNav";
 import SectionHeader from "@/components/SectionHeader";
-import { Download, FileSpreadsheet, FileText, FileType2, Lock } from "lucide-react";
+import { FileSpreadsheet, FileText, FileType2, Lock, Mail } from "lucide-react";
 
 export const metadata = {
   title: "Documents",
@@ -52,18 +52,18 @@ export default function Page() {
                 </div>
                 <h3 className="font-bold text-base mb-2">{d.name}</h3>
                 <p className="text-sm text-gable/70 leading-relaxed mb-4 flex-grow">{d.body}</p>
-                <a href={`/documents/${d.file}`} className="btn-primary text-sm justify-center">
-                  <Download size={13} /> Download
+                <a
+                  href={`mailto:mike@aiaccelerator.uk?subject=${encodeURIComponent(`ARIA bid · request: ${d.name}`)}&body=${encodeURIComponent(`Hi Mike,\n\nPlease send me the latest copy of ${d.name} (${d.file}) for review.\n\nThanks.`)}`}
+                  className="btn-primary text-sm justify-center"
+                >
+                  <Mail size={13} /> Request copy
                 </a>
               </div>
             ))}
           </div>
 
           <p className="text-[11px] text-gable/40 mt-4">
-            File availability: the live PDFs and XLSX sit in the original
-            project folder. On the public Vercel deployment we attach the
-            v6 PDFs to this page. Reviewers with the URL can download
-            directly.
+            Documents are sent on request to keep them current and version-controlled. Each &ldquo;Request copy&rdquo; button drafts an email to Mike with the right document name pre-filled — reply usually within an hour during UK working hours.
           </p>
         </div>
       </section>
