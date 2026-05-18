@@ -56,19 +56,27 @@ const PHASES = [
   },
 ];
 
-const MONTHS = [
-  { m: "Month 1 · Sep '26", title: "Stand-up", points: ["Contract commences", "Year-1 senior hire onboarded", "Platform v0 + first 100 seed use cases in private beta", "Bramhavar PD kick-off", "Fellow recruitment opens publicly", "Open-source GitHub org created"] },
-  { m: "Month 2 · Oct '26", title: "First skills + PD #2", points: ["Open-source skills #1 (Peer Review) and #2 (Grant Writing) released", "Dalrymple PD kick-off", "Platform v0.5 — public Creator onboarding live", "First 30 use cases public", "Highest Tide operational"] },
-  { m: "Month 3 · Nov '26", title: "First vertical + Q1 Event", points: ["Vertical 1 (Nuclear, SimplyBD-led) live with 50+ seed use cases", "Fellow shortlist (24 candidates for 8–12 places)", "Cross-pollination Event Q1 · London (AIA Design District)", "Open-source skill #3 (Living Documentation)"] },
-  { m: "Month 4 · Dec '26", title: "Fellow matches + verticals 2, 3", points: ["8–12 Fellows matched to Creator teams", "Verticals 2 (Biomedical, Orbit-led) and 3 (Drug Discovery, Orbit-led) live", "Cohort 2 PD kick-off (Wang or Wurm)", "Open-source skill #4", "First quarterly progress report"] },
-  { m: "Month 5 · Jan '27", title: "Fellow placements begin", points: ["All Fellows begin 12-month placements", "Orbit-RRI delivers 2-day Trusted Research + PAS 440 training", "Verticals 4 (Novel Materials) and 5 (Photonics/Quantum) live", "First Bramhavar quarterly review", "M3 go/no-go milestone reached"] },
-  { m: "Month 6 · Feb '27", title: "All verticals live + Q2 Event", points: ["Vertical 6 (AI for Science Talent, HFBAC-led) live", "Cross-pollination Event Q2 · Cambridge", "Scientific Advisory Board established (3+ members)", "M6 milestone: 100+ skill downloads, all 6 verticals live"] },
-  { m: "Month 7 · Mar '27", title: "Compounding", points: ["First Fellow-authored technique cards in library", "Platform v1 launched publicly", "First commercial enterprise picks up the open-source skills (crowding-in evidence)", "Open-source skills #6–8 released"] },
-  { m: "Month 8 · Apr '27", title: "Mid-year inflexion", points: ["First cross-vertical pollination evidence: Materials Creator adopts a Drug Discovery technique", "Mid-year ARIA team check-in", "Open-source skills #9–12 released"] },
-  { m: "Month 9 · May '27", title: "Q3 Event + scale prep", points: ["Cross-pollination Event Q3 · Manchester", "M9 milestone: demonstrable Creator value in 3+ named engagements", "Begin Year-2 Phase 2 planning", "Open-source skills #13–18 released"] },
-  { m: "Month 10 · Jun '27", title: "Phase 2 case-building", points: ["Phase 2 business case prepared", "Open-source skills #19–22 released", "Fellow cohort half-way retention check-ins (HFBAC methodology)"] },
-  { m: "Month 11 · Jul '27", title: "Year-end run-up", points: ["Phase 2 negotiation with ARIA", "Open-source skills #23–28 released", "Annual impact report drafted"] },
-  { m: "Month 12 · Aug '27", title: "Year-end + Q4 Event", points: ["Cross-pollination Event Q4 · Oxford", "Annual impact report published (public-good)", "M12 milestone — Phase 2 trigger decision", "Open-source skills #29–32 — target exceeded"] },
+type Month = {
+  m: string;
+  title: string;
+  points: string[];
+  quarter: "Q1" | "Q2" | "Q3" | "Q4";
+  milestone?: string;
+};
+
+const MONTHS: Month[] = [
+  { quarter: "Q1", m: "Month 1 · Sep '26", title: "Stand-up", points: ["Contract commences", "Year-1 senior hire onboarded", "Platform v0 + first 100 seed use cases in private beta", "Bramhavar PD kick-off", "Fellow recruitment opens publicly", "Open-source GitHub org created"] },
+  { quarter: "Q1", m: "Month 2 · Oct '26", title: "First skills + PD #2", points: ["Open-source skills #1 (Peer Review) and #2 (Grant Writing) released", "Dalrymple PD kick-off", "Platform v0.5 — public Creator onboarding live", "First 30 use cases public", "Highest Tide operational"] },
+  { quarter: "Q1", m: "Month 3 · Nov '26", title: "First vertical + Q1 Event", milestone: "M3", points: ["Vertical 1 (Nuclear, SimplyBD-led) live with 50+ seed use cases", "Fellow shortlist (24 candidates for 8–12 places)", "Cross-pollination Event Q1 · London (AIA Design District)", "Open-source skill #3 (Living Documentation)"] },
+  { quarter: "Q2", m: "Month 4 · Dec '26", title: "Fellow matches + verticals 2, 3", points: ["8–12 Fellows matched to Creator teams", "Verticals 2 (Biomedical, Orbit-led) and 3 (Drug Discovery, Orbit-led) live", "Cohort 2 PD kick-off (Wang or Wurm)", "Open-source skill #4", "First quarterly progress report"] },
+  { quarter: "Q2", m: "Month 5 · Jan '27", title: "Fellow placements begin", milestone: "M3 reached", points: ["All Fellows begin 12-month placements", "Orbit-RRI delivers 2-day Trusted Research + PAS 440 training", "Verticals 4 (Novel Materials) and 5 (Photonics/Quantum) live", "First Bramhavar quarterly review", "M3 go/no-go milestone reached"] },
+  { quarter: "Q2", m: "Month 6 · Feb '27", title: "All verticals live + Q2 Event", milestone: "M6 reached", points: ["Vertical 6 (AI for Science Talent, HFBAC-led) live", "Cross-pollination Event Q2 · Cambridge", "Scientific Advisory Board established (3+ members)", "M6 milestone: 100+ skill downloads, all 6 verticals live"] },
+  { quarter: "Q3", m: "Month 7 · Mar '27", title: "Compounding", points: ["First Fellow-authored technique cards in library", "Platform v1 launched publicly", "First commercial enterprise picks up the open-source skills (crowding-in evidence)", "Open-source skills #6–8 released"] },
+  { quarter: "Q3", m: "Month 8 · Apr '27", title: "Mid-year inflexion", points: ["First cross-vertical pollination evidence: Materials Creator adopts a Drug Discovery technique", "Mid-year ARIA team check-in", "Open-source skills #9–12 released"] },
+  { quarter: "Q3", m: "Month 9 · May '27", title: "Q3 Event + scale prep", milestone: "M9 reached", points: ["Cross-pollination Event Q3 · Manchester", "M9 milestone: demonstrable Creator value in 3+ named engagements", "Begin Year-2 Phase 2 planning", "Open-source skills #13–18 released"] },
+  { quarter: "Q4", m: "Month 10 · Jun '27", title: "Phase 2 case-building", points: ["Phase 2 business case prepared", "Open-source skills #19–22 released", "Fellow cohort half-way retention check-ins (HFBAC methodology)"] },
+  { quarter: "Q4", m: "Month 11 · Jul '27", title: "Year-end run-up", points: ["Phase 2 negotiation with ARIA", "Open-source skills #23–28 released", "Annual impact report drafted"] },
+  { quarter: "Q4", m: "Month 12 · Aug '27", title: "Year-end + Q4 Event", milestone: "M12 · Phase 2 trigger", points: ["Cross-pollination Event Q4 · Oxford", "Annual impact report published (public-good)", "M12 milestone — Phase 2 trigger decision", "Open-source skills #29–32 — target exceeded"] },
 ];
 
 const MILESTONES = [
@@ -167,30 +175,81 @@ export default function Page() {
           <div className="relative">
             <div className="absolute left-3 top-2 bottom-2 w-px bg-gable/15 hidden md:block" />
             <div className="space-y-4">
-              {MONTHS.map((mo, i) => (
-                <div key={mo.m} className="md:flex gap-6 md:pl-12 relative">
-                  <div className="md:absolute md:left-0 top-2 flex items-center gap-2 mb-2 md:mb-0">
-                    <div className="w-3 h-3 rounded-full bg-turq border-2 border-paper relative z-10" />
-                  </div>
-                  <div className="card flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-[10px] uppercase tracking-wider text-gable/50 font-semibold">
-                        {mo.m}
-                      </span>
-                      <div className="h-px flex-1 bg-gable/10" />
-                      <span className="text-[10px] text-gable/40">Step {i + 1} / 12</span>
+              {MONTHS.map((mo, i) => {
+                const isQuarterStart =
+                  i === 0 || MONTHS[i - 1].quarter !== mo.quarter;
+                const isMilestone = !!mo.milestone;
+                return (
+                  <div key={mo.m}>
+                    {isQuarterStart && (
+                      <div className="md:pl-12 mb-2 mt-6 first:mt-0 flex items-center gap-3">
+                        <span
+                          className="tag"
+                          style={{
+                            background: "rgba(0, 122, 94, 0.10)",
+                            color: "#007A5E",
+                          }}
+                        >
+                          {mo.quarter} · {mo.quarter === "Q1" ? "Foundation" : mo.quarter === "Q2" ? "First verticals all live" : mo.quarter === "Q3" ? "Compounding" : "Phase 2 trigger"}
+                        </span>
+                        <div className="h-px flex-1 bg-gable/10" />
+                      </div>
+                    )}
+                    <div className="md:flex gap-6 md:pl-12 relative">
+                      <div className="md:absolute md:left-0 md:top-3 flex items-center gap-2 mb-2 md:mb-0">
+                        <div
+                          className={
+                            isMilestone
+                              ? "w-5 h-5 rounded-full bg-turq border-2 border-paper relative z-10 ring-2 ring-turq/30"
+                              : "w-3 h-3 rounded-full bg-turq border-2 border-paper relative z-10 md:ml-1"
+                          }
+                        />
+                      </div>
+                      <div
+                        className={`card flex-1 ${
+                          isMilestone ? "border-l-4 !border-l-turq" : ""
+                        }`}
+                      >
+                        <div className="flex items-center gap-3 mb-2 flex-wrap">
+                          <span className="text-[10px] uppercase tracking-wider text-gable/50 font-semibold">
+                            {mo.m}
+                          </span>
+                          {isMilestone && (
+                            <span
+                              className="text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded"
+                              style={{
+                                background: "rgba(0, 122, 94, 0.14)",
+                                color: "#007A5E",
+                              }}
+                            >
+                              ★ {mo.milestone}
+                            </span>
+                          )}
+                          <div className="h-px flex-1 bg-gable/10" />
+                          <span className="text-[10px] text-gable/40">
+                            Step {i + 1} / 12
+                          </span>
+                        </div>
+                        <h3 className="h-card text-lg mb-3">{mo.title}</h3>
+                        <ul className="space-y-1.5">
+                          {mo.points.map((p) => (
+                            <li
+                              key={p}
+                              className="text-[13px] text-gable/70 leading-relaxed flex gap-2"
+                            >
+                              <Clock
+                                size={13}
+                                className="text-gable/30 mt-1 shrink-0"
+                              />{" "}
+                              {p}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
-                    <h3 className="h-card text-lg mb-3">{mo.title}</h3>
-                    <ul className="space-y-1.5">
-                      {mo.points.map((p) => (
-                        <li key={p} className="text-[13px] text-gable/70 leading-relaxed flex gap-2">
-                          <Clock size={13} className="text-gable/30 mt-1 shrink-0" /> {p}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 

@@ -134,6 +134,23 @@ export default function SiteFooter() {
             <span>{isAria ? "For ARIA reviewers · Not for redistribution" : "Open-source, UK-built, ARIA Cohort 2 bid submitted"}</span>
           </div>
         </div>
+
+        <div className="border-t border-white/5 mt-4 pt-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 text-[10px] text-white/30">
+          <div>
+            Built in public ·{" "}
+            <a
+              href={`https://${SITE.githubRepo ?? SITE.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-turq transition underline-offset-2 hover:underline"
+            >
+              {SITE.githubRepo ?? SITE.github}
+            </a>
+          </div>
+          <div>
+            Next.js 14 · Tailwind · MIT-licensed source · deployed on Vercel
+          </div>
+        </div>
       </div>
     </footer>
   );
