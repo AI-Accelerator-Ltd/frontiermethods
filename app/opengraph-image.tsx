@@ -85,6 +85,9 @@ export default function OpengraphImage() {
         {/* Middle: the headline */}
         <div
           style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 20,
             color: "white",
             fontSize: 80,
             fontWeight: 800,
@@ -93,8 +96,10 @@ export default function OpengraphImage() {
             maxWidth: 1000,
           }}
         >
-          <span>AI methods for the people </span>
-          <span style={{ color: "#00FFBC" }}>building the next frontier of science.</span>
+          <div style={{ display: "flex" }}>AI methods for the people</div>
+          <div style={{ display: "flex", color: "#00FFBC" }}>
+            building the next frontier of science.
+          </div>
         </div>
 
         {/* Bottom: stat row */}
