@@ -162,7 +162,7 @@ export default function HighestTideWheel({ size = 480 }: { size?: number }) {
       })}
 
       {/* Legend */}
-      <g transform="translate(20, 460)">
+      <g transform="translate(20, 470)">
         <circle cx="6" cy="6" r="5" fill="#007A5E" />
         <text x="16" y="10" fontSize="10" fill="#5A6E7A">
           Auto-approve
@@ -178,8 +178,8 @@ export default function HighestTideWheel({ size = 480 }: { size?: number }) {
       </g>
 
       <text
-        x="400"
-        y="470"
+        x="490"
+        y="495"
         fontSize="9.5"
         fill="#5A6E7A"
         textAnchor="end"
