@@ -2,6 +2,7 @@ import PageHeader from "@/components/PageHeader";
 import PageNav from "@/components/PageNav";
 import SectionHeader from "@/components/SectionHeader";
 import { Lock, ShieldAlert, ShieldCheck } from "lucide-react";
+import HighestTideWheel from "@/components/visuals/HighestTideWheel";
 
 export const metadata = {
   title: "Governance",
@@ -66,6 +67,10 @@ export default function Page() {
             eyebrow="The five lenses"
             title="What each lens covers, what it aligns to, who owns it."
           />
+
+          <div className="card p-6 md:p-10 mb-6">
+            <HighestTideWheel />
+          </div>
           <div className="card overflow-x-auto">
             <table className="w-full text-sm">
               <thead>

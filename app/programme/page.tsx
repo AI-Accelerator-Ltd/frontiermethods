@@ -3,6 +3,7 @@ import PageNav from "@/components/PageNav";
 import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight, CalendarRange, CheckCircle2, Clock, Flag } from "lucide-react";
 import Link from "next/link";
+import PhaseTrajectory from "@/components/visuals/PhaseTrajectory";
 
 export const metadata = {
   title: "The Programme",
@@ -102,6 +103,10 @@ export default function Page() {
             eyebrow="Phase-gated trajectory"
             title="£10m total. £3m, then £3.5m, then £3.5m — conditional."
           />
+
+          <div className="card p-4 md:p-8 mb-6">
+            <PhaseTrajectory />
+          </div>
 
           <div className="grid lg:grid-cols-3 gap-4">
             {PHASES.map((p, i) => (

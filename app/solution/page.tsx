@@ -3,6 +3,7 @@ import PageNav from "@/components/PageNav";
 import SectionHeader from "@/components/SectionHeader";
 import Link from "next/link";
 import { ArrowRight, Database, Layers, Lock, Shapes, Sparkles, TestTube2, Users2, ScrollText } from "lucide-react";
+import PlatformArchitecture from "@/components/visuals/PlatformArchitecture";
 
 export const metadata = {
   title: "The Solution",
@@ -130,6 +131,10 @@ export default function Page() {
             title="Four primary objects."
             lede="The whole system reduces to four object types. Relationships are simple: a Technique has many Use Cases, has many Skills, and is rated against many Lenses. Use Cases live inside Verticals. Lenses are global."
           />
+
+          <div className="card p-4 md:p-8 mb-6">
+            <PlatformArchitecture />
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {DATA_OBJECTS.map((o) => (

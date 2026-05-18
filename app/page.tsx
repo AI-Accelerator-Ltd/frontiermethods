@@ -14,6 +14,7 @@ import {
   Users2,
 } from "lucide-react";
 import { SITE } from "@/lib/nav";
+import CrossVerticalDiagram from "@/components/visuals/CrossVerticalDiagram";
 
 export default function HomePage() {
   return (
@@ -139,6 +140,27 @@ export default function HomePage() {
             access, and where the most powerful use cases often come from{" "}
             <strong>outside</strong> a researcher&apos;s home domain.
           </p>
+        </div>
+      </section>
+
+      {/* CROSS-VERTICAL VISUAL */}
+      <section className="bg-gable py-16 text-white">
+        <div className="max-w-8xl mx-auto px-5 lg:px-8">
+          <div className="mb-8 max-w-3xl">
+            <span className="tag tag-on-dark-turq mb-3">The differentiator, drawn</span>
+            <h2 className="h-section text-3xl md:text-4xl mt-3 mb-3 text-white">
+              Techniques travel across vertical boundaries.
+            </h2>
+            <p className="text-base text-white/65 leading-relaxed">
+              The strongest AI reuse consistently sits outside a
+              researcher&apos;s home domain. The platform makes those jumps
+              deliberate — surfacing techniques discovered in one vertical
+              into the workflows of another.
+            </p>
+          </div>
+          <div className="card-dark p-4 md:p-6">
+            <CrossVerticalDiagram />
+          </div>
         </div>
       </section>
 
